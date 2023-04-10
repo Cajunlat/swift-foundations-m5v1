@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		72E06C6329E4716F000E4555 /* LearningAppV1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C6229E4716F000E4555 /* LearningAppV1App.swift */; };
-		72E06C6529E4716F000E4555 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C6429E4716F000E4555 /* ContentView.swift */; };
+		72E06C6529E4716F000E4555 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C6429E4716F000E4555 /* HomeView.swift */; };
 		72E06C6729E47170000E4555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E06C6629E47170000E4555 /* Assets.xcassets */; };
 		72E06C6A29E47170000E4555 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E06C6929E47170000E4555 /* Preview Assets.xcassets */; };
+		72E06C7629E4725B000E4555 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C7529E4725B000E4555 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72E06C5F29E4716F000E4555 /* LearningAppV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAppV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E06C6229E4716F000E4555 /* LearningAppV1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAppV1App.swift; sourceTree = "<group>"; };
-		72E06C6429E4716F000E4555 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72E06C6429E4716F000E4555 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72E06C6629E47170000E4555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E06C6929E47170000E4555 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72E06C7529E4725B000E4555 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,11 @@
 			isa = PBXGroup;
 			children = (
 				72E06C6229E4716F000E4555 /* LearningAppV1App.swift */,
-				72E06C6429E4716F000E4555 /* ContentView.swift */,
+				72E06C7029E471C9000E4555 /* Views */,
+				72E06C7129E471D0000E4555 /* ViewModels */,
+				72E06C7229E471D9000E4555 /* Models */,
+				72E06C7429E471FA000E4555 /* Helpers */,
+				72E06C7329E471E5000E4555 /* Resources */,
 				72E06C6629E47170000E4555 /* Assets.xcassets */,
 				72E06C6829E47170000E4555 /* Preview Content */,
 			);
@@ -65,6 +71,43 @@
 				72E06C6929E47170000E4555 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72E06C7029E471C9000E4555 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72E06C6429E4716F000E4555 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72E06C7129E471D0000E4555 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				72E06C7529E4725B000E4555 /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		72E06C7229E471D9000E4555 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72E06C7329E471E5000E4555 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72E06C7429E471FA000E4555 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E06C6529E4716F000E4555 /* ContentView.swift in Sources */,
+				72E06C6529E4716F000E4555 /* HomeView.swift in Sources */,
 				72E06C6329E4716F000E4555 /* LearningAppV1App.swift in Sources */,
+				72E06C7629E4725B000E4555 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
