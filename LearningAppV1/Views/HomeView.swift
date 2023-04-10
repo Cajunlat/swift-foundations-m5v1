@@ -13,40 +13,44 @@ struct HomeView: View {
     
     var body: some View {
         
-        
-        
         NavigationView {
             
             VStack (alignment: .leading) {
                 
                 Text("What do you want to do today?")
                     .padding(.leading)
-
+                
                 ScrollView {
                     
                     LazyVStack {
                         
                         ForEach(model.modules) { module in
                             
-                            // Learning Card
-                            HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
-                            
-                            // Quiz Card
-                            HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
-                            
+                            VStack {
+                                NavigationLink(destination: LessonView()) {
+                                    // Learning Card
+                                    HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                }.buttonStyle(PlainButtonStyle())
+                                
+                                NavigationLink(destination: TestView()) {
+                                    // Quiz Card
+                                    HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
+                                }.buttonStyle(PlainButtonStyle())
+                                
+                            }
+                            .navigationViewStyle(.stack)
                         }
+                        .padding()
                     }
-                    .padding()
                 }
+                .navigationTitle("Get Started")
             }
-            .navigationTitle("Get Started")
+            
         }
-        
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView().environmentObject(ContentModel())
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            HomeView().environmentObject(ContentModel())
+        }
     }
-}
