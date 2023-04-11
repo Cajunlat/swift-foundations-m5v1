@@ -20,6 +20,9 @@
 		72E06C8229E4AB09000E4555 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8129E4AB09000E4555 /* TestView.swift */; };
 		72E06C8429E58E8F000E4555 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8329E58E8F000E4555 /* ContentView.swift */; };
 		72E06C8629E5A3F4000E4555 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8529E5A3F4000E4555 /* ContentViewRow.swift */; };
+		72E06C8829E5C937000E4555 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8729E5C937000E4555 /* ContentDetailView.swift */; };
+		72E06C8B29E5CCB4000E4555 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E06C8A29E5CCB4000E4555 /* AVKit.framework */; };
+		72E06C8D29E5CDA8000E4555 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8C29E5CDA8000E4555 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		72E06C8129E4AB09000E4555 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		72E06C8329E58E8F000E4555 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72E06C8529E5A3F4000E4555 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		72E06C8729E5C937000E4555 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		72E06C8A29E5CCB4000E4555 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		72E06C8C29E5CDA8000E4555 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E06C8B29E5CCB4000E4555 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +62,7 @@
 			children = (
 				72E06C6129E4716F000E4555 /* LearningAppV1 */,
 				72E06C6029E4716F000E4555 /* Products */,
+				72E06C8929E5CCB4000E4555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +106,7 @@
 				72E06C8129E4AB09000E4555 /* TestView.swift */,
 				72E06C8329E58E8F000E4555 /* ContentView.swift */,
 				72E06C8529E5A3F4000E4555 /* ContentViewRow.swift */,
+				72E06C8729E5C937000E4555 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 			children = (
 				72E06C7829E474A0000E4555 /* data.json */,
 				72E06C7729E474A0000E4555 /* style.html */,
+				72E06C8C29E5CDA8000E4555 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -132,6 +142,14 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		72E06C8929E5CCB4000E4555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72E06C8A29E5CCB4000E4555 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +225,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E06C8229E4AB09000E4555 /* TestView.swift in Sources */,
+				72E06C8D29E5CDA8000E4555 /* Constants.swift in Sources */,
 				72E06C6529E4716F000E4555 /* HomeView.swift in Sources */,
 				72E06C8429E58E8F000E4555 /* ContentView.swift in Sources */,
 				72E06C7E29E48F41000E4555 /* HomeViewRow.swift in Sources */,
 				72E06C6329E4716F000E4555 /* LearningAppV1App.swift in Sources */,
+				72E06C8829E5C937000E4555 /* ContentDetailView.swift in Sources */,
 				72E06C8629E5A3F4000E4555 /* ContentViewRow.swift in Sources */,
 				72E06C7629E4725B000E4555 /* ContentModel.swift in Sources */,
 				72E06C8029E4AA08000E4555 /* LessonView.swift in Sources */,
