@@ -27,7 +27,7 @@ struct HomeView: View {
                         ForEach(model.modules) { module in
                             
                             VStack {
-                                NavigationLink(destination: LessonView()) {
+                                NavigationLink(destination: ContentView(module: module)) {
                                     // Learning Card
                                     HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                 }.buttonStyle(PlainButtonStyle())
@@ -38,7 +38,7 @@ struct HomeView: View {
                                 }.buttonStyle(PlainButtonStyle())
                                 
                             }
-                            .navigationViewStyle(.stack)
+                            
                         }
                         .padding()
                     }
@@ -46,10 +46,10 @@ struct HomeView: View {
                 .navigationTitle("Get Started")
             }
             
-        }
+        }.navigationViewStyle(.stack)
     }
 }
-    struct ContentView_Previews: PreviewProvider {
+    struct HomeView_Previews: PreviewProvider {
         static var previews: some View {
             HomeView().environmentObject(ContentModel())
         }
