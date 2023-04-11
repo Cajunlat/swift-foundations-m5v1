@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var module: Module
+    @EnvironmentObject var model: ContentModel
     
     var body: some View {
 
@@ -17,59 +17,35 @@ struct ContentView: View {
             
             LazyVStack (spacing: 10){
                 
-                ForEach (module.content.lessons) { lesson in
+                if model.currentModule != nil {
                     
-                    NavigationLink {
-                        LessonView()
-                    } label: {
-                        ZStack (alignment: .leading){
-                            
-                            Rectangle()
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .shadow(radius: 5)
-                                                     
-                            HStack (spacing: 25) {
-                                
-                                Text("\(lesson.id + 1)")
-                                    .bold()
-                                    .font(.title2)
-                                    .padding()
-                                    
-                                
-                                VStack (alignment: .leading, spacing: 1) {
-                                    
-                                    Text(lesson.title)
-                                        .bold()
-                                        .font(.title3)
-                                        
-                                    Text(lesson.duration)
-                                        .font(.caption)
-                                }
-                            }
+                    ForEach (0..<model.currentModule!.content.lessons.count, id: \.self) { index in
+                        
+                        NavigationLink {
+                            LessonView()
+                        } label: {
+                            ContentViewRow(index: index)
                         }
-                        .frame(height: 70)
-                        .padding([.leading, .trailing])
+                        .buttonStyle(PlainButtonStyle())
+                        
                     }
-                    .buttonStyle(PlainButtonStyle())
-                          
                 }
                 
             }
             
         }
-        .navigationTitle("Learn \(module.category)")
+        .navigationTitle("Learn \(model.currentModule?.category ?? "")")
         .navigationViewStyle(.stack)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
+    
     static var previews: some View {
-        
-        let model = ContentModel()
-        
-        
-        
-        ContentView(module: model.modules[0])
+    
+        ContentView()
+            .environmentObject(ContentModel())
+
     }
 }

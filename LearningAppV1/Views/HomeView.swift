@@ -27,7 +27,11 @@ struct HomeView: View {
                         ForEach(model.modules) { module in
                             
                             VStack {
-                                NavigationLink(destination: ContentView(module: module)) {
+                                NavigationLink(
+                                    destination: ContentView()
+                                        .onAppear(perform: {
+                                            model.beginModule(module.id)
+                                        })) {
                                     // Learning Card
                                     HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                 }.buttonStyle(PlainButtonStyle())
