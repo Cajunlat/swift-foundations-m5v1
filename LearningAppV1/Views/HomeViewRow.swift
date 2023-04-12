@@ -71,23 +71,23 @@ struct HomeViewRow: View {
     }
 }
 
-struct HomeViewRow_Previews: PreviewProvider {
-    static var previews: some View {
-
-//        let test = ContentModel()
-        
-//        let image = test.modules[1].content.image
-//        let title = "Learn \(test.modules[1].category)"
-//        let description = test.modules[1].content.description
-//        let amount = "\(test.modules[1].content.lessons.count) Lessons"
-//        let time = test.modules[1].content.time
-        
-        let image = "swift"
-        let title = "title"
-        let description = "description"
-        let amount = "20 Lessons"
-        let time = "2 hours"
-
-        HomeViewRow(image: image, title: title, description: description, count: amount, time: time)
-    }
-}
+//struct HomeViewRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//
+////        let test = ContentModel()
+//
+////        let image = test.modules[1].content.image
+////        let title = "Learn \(test.modules[1].category)"
+////        let description = test.modules[1].content.description
+////        let amount = "\(test.modules[1].content.lessons.count) Lessons"
+////        let time = test.modules[1].content.time
+//
+//        let image = "swift"
+//        let title = "title"
+//        let description = "description"
+//        let amount = "20 Lessons"
+//        let time = "2 hours"
+//
+//        HomeViewRow(image: image, title: title, description: description, count: amount, time: time)
+//    }
+//}

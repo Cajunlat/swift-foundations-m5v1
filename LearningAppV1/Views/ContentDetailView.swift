@@ -19,16 +19,16 @@ struct ContentDetailView: View {
         let url = URL(string: Constants.videoHostUrl + (lesson?.video ?? ""))
         
         VStack {
-            // VideoPlayer -- Only show video if valid url
+            // MARK: VideoPlayer -- Only show video if valid url
             if url != nil {
                 VideoPlayer(player: AVPlayer(url: url!))
                     .cornerRadius(10)
             }
             
-            // Description
+            // MARK: Description
             CodeTextView()
               
-            // Next Lesson Button -- only show if there is a next lesson
+            // MARK: Next Lesson Button -- only show if there is a next lesson
             if model.hasNextLesson() {
                 Button {
                     // Advance the lesson
@@ -37,20 +37,31 @@ struct ContentDetailView: View {
 
                     ZStack {
                         
-                        Rectangle()
-                            .foregroundColor(Color.green)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
+                        RectangleCard(color: .green)
+                            .frame(height: 48)
      
                         Text("Next Lesson: \(model.currentModule!.content.lessons[model.currentLessonIndex + 1].title)")
                             .foregroundColor(.white)
                             .bold()
                     }
-                    
                 }
-                .frame(height: 48)
             }
-            
+            else {
+                Button {
+                    // Go back to home screen
+                    model.currentContentSelected = nil
+                } label: {
+                    ZStack {
+                        
+                        RectangleCard(color: .green)
+                            .frame(height: 48)
+                        
+                        Text("Complete")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                }
+            }
         }
         .padding()
         .navigationTitle(lesson?.title ?? "")

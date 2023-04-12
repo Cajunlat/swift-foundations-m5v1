@@ -24,6 +24,7 @@
 		72E06C8B29E5CCB4000E4555 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E06C8A29E5CCB4000E4555 /* AVKit.framework */; };
 		72E06C8D29E5CDA8000E4555 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8C29E5CDA8000E4555 /* Constants.swift */; };
 		72E06CAB29E5D902000E4555 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06CAA29E5D902000E4555 /* CodeTextView.swift */; };
+		72E06CAD29E6F292000E4555 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06CAC29E6F292000E4555 /* RectangleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		72E06C8A29E5CCB4000E4555 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		72E06C8C29E5CDA8000E4555 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72E06CAA29E5D902000E4555 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
+		72E06CAC29E6F292000E4555 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				72E06C8529E5A3F4000E4555 /* ContentViewRow.swift */,
 				72E06C8729E5C937000E4555 /* ContentDetailView.swift */,
 				72E06CAA29E5D902000E4555 /* CodeTextView.swift */,
+				72E06CAC29E6F292000E4555 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				72E06C7E29E48F41000E4555 /* HomeViewRow.swift in Sources */,
 				72E06C6329E4716F000E4555 /* LearningAppV1App.swift in Sources */,
 				72E06C8829E5C937000E4555 /* ContentDetailView.swift in Sources */,
+				72E06CAD29E6F292000E4555 /* RectangleCard.swift in Sources */,
 				72E06C8629E5A3F4000E4555 /* ContentViewRow.swift in Sources */,
 				72E06C7629E4725B000E4555 /* ContentModel.swift in Sources */,
 				72E06C8029E4AA08000E4555 /* LessonView.swift in Sources */,
@@ -375,6 +379,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +409,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
