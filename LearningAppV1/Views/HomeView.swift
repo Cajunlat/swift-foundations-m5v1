@@ -64,6 +64,9 @@ struct HomeView: View {
             // Use Module and pass in module.id for test
             .navigationDestination(for: Module.self , destination: { test in
                 TestView()
+                    .onAppear {
+                        model.beginTest(test.id)
+                    }
             })
             .navigationTitle("Get Started")
         }
