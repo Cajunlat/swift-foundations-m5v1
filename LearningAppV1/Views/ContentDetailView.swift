@@ -49,7 +49,7 @@ struct ContentDetailView: View {
             else {
                 Button {
                     // Go back to home screen
-                    model.currentContentSelected = nil
+                    model.path = .init()
                 } label: {
                     ZStack {
                         

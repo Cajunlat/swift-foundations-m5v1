@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ContentModel: ObservableObject {
     
@@ -26,6 +27,9 @@ class ContentModel: ObservableObject {
     
     // Current selected content and text
     @Published var currentContentSelected:Int?
+    
+    // Create Navigation Path
+    @Published var path = NavigationPath()
     
     init() {
         
