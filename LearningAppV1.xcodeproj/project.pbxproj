@@ -24,6 +24,7 @@
 		72E06C8D29E5CDA8000E4555 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06C8C29E5CDA8000E4555 /* Constants.swift */; };
 		72E06CAB29E5D902000E4555 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06CAA29E5D902000E4555 /* CodeTextView.swift */; };
 		72E06CAD29E6F292000E4555 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06CAC29E6F292000E4555 /* RectangleCard.swift */; };
+		72E06D0929ED8B0E000E4555 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06D0829ED8B0E000E4555 /* TestResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		72E06C8C29E5CDA8000E4555 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72E06CAA29E5D902000E4555 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		72E06CAC29E6F292000E4555 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		72E06D0829ED8B0E000E4555 /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				72E06C8729E5C937000E4555 /* ContentDetailView.swift */,
 				72E06CAA29E5D902000E4555 /* CodeTextView.swift */,
 				72E06CAC29E6F292000E4555 /* RectangleCard.swift */,
+				72E06D0829ED8B0E000E4555 /* TestResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E06CAB29E5D902000E4555 /* CodeTextView.swift in Sources */,
+				72E06D0929ED8B0E000E4555 /* TestResultView.swift in Sources */,
 				72E06C8229E4AB09000E4555 /* TestView.swift in Sources */,
 				72E06C8D29E5CDA8000E4555 /* Constants.swift in Sources */,
 				72E06C6529E4716F000E4555 /* HomeView.swift in Sources */,
